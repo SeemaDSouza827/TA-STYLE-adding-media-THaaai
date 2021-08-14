@@ -70,6 +70,10 @@ body{
     justify-content:center;
     align-items:center;
 }
+.flex-48{
+    flex:0 1 48%;
+    justify-content: space-between;
+}
 .space{
     justify-content: space-between;
 }
@@ -86,7 +90,7 @@ body{
     justify-content: stretch;
 }
 .start{
-    justify-content: start;
+    align-items: start;
 }
 a{
     text-decoration: none;
@@ -245,6 +249,7 @@ span{
 .work-img{
     margin-top: 20px;
     width: 90%;
+    border-radius: 6px;
 }
 /* Contact */
 .contact{
@@ -255,13 +260,16 @@ span{
 .map{
     width: 100%;
     border-radius: 50%;   
+    text-align: center;
 }
-input{
-    width: 250px;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 16px 12px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 16px;
 }
 td{
     padding-right: 10px;
