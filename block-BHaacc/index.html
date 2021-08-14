@@ -19,30 +19,36 @@
             </div>            
             <ul class="menu flex">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="">Blog</a>
+                    <a href="#">Blog</a>
                 </li>
                 <li>
-                    <a href="">Our Work</a>
+                    <a href="#">Our Work</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#">Contact</a>
                 </li>
             </ul>
             <ul class="social flex space">
                 <li>
-                    <i class="fab fa-facebook-square"></i>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>                    
                 </li>
                 <li>
-                    <i class="fab fa-twitter"></i>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>                   
                 </li>
                 <li>
-                    <i class="fab fa-instagram"></i>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>                    
                 </li>                
                 <button class="login">
                     Sign In/Join
@@ -59,9 +65,14 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa facere consequuntur omnis sequi fugiat aliquid deleniti illo a temporibus accusantium incidunt, suscipit in modi placeat autem maiores, necessitatibus quibusdam!
                     </p>
-                    <button class="project">
-                        Start a Project
-                    </button>
+                    <div>
+                        <button class="project">
+                            Start a Project 
+                        </button>
+                        <span class="call">
+                            Call Us (+66) 010-200-021-986 for any Enquiery.
+                        </span>    
+                    </div>
                 </div>
                 <figure>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/AqcjdkPMPJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -281,30 +292,23 @@
                 </div>
                 <div class="flex space">
                     <div>
-                        <form action="input">    
-                            <table>
-                                <tr>
-                                    <td>
-                                        <input type="name"  id="name">
-                                    </td>
-                                    <td>
-                                        <input type="email">
-                                    </td>                                    
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="tel">
-                                    </td>
-                                    <td>
-                                        <input type="budget" value="5000" min="0" max="10000" step="500">
-                                    </td>                                 
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="Message" id="msg">
-                                    </td>
-                                </tr>
-                            </table>                       
+                        <form action="index.html" method="POST">    
+                            <fieldset>
+                                <div class="flex space">
+                                    <input class="form-control flex-48" name="Name" type="text" placeholder="Full Name">
+                                    <input class="form-control flex-48" name="Email" type="text" placeholder="Email">
+                                </div>
+                                <div class="flex space">
+                                    <input class="form-control flex-48" name="Phone" type="tel" placeholder="Your Phone">
+                                    <select class="form-control flex-48" name="budget" >
+                                        <option value="Budget level">Budget level</option>
+                                        <option value="Budget level1">Budget level1</option>
+                                        <option value="Budget level2">Budget level2</option>
+                                        <option value="Budget level3">Budget level3</option>
+                                    </select>
+                                </div>
+                                <textarea class="form-control" placeholder="Your Requierments" name="Requierments"rows="4"></textarea>
+                            </fieldset>                       
                         </form>
                         <button class="login">Send Message</button>
                     </div>
@@ -317,7 +321,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="content flex space">
+            <div class="content start flex space">
                 <div class="aim">
                     <h2>Hydro Company</h2>
                 <p>
@@ -361,7 +365,7 @@
                 </div>
                 <div class="part flex space">
                     <span class="call">
-                        CallnUs(+66) 010-200-021-986
+                        Call Us (+66) 010-200-021-986
                     </span>
                     <ul class="social flex space">
                         <li>
@@ -374,8 +378,7 @@
                             <i class="fab fa-instagram"></i>
                         </li>        
                     </ul>
-                </div>
-                
+                </div>                
             </div>            
         </div>
     </footer>    
